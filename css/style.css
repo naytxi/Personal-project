@@ -1,0 +1,330 @@
+* {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --colortextodestacado: rgb(235, 184, 19);
+    --colorbackground: #ffbd59; 
+    --textcolor: #ffbd59;
+    --colorAzulCabecera: rgb(0, 64, 107);
+    --font:Arial, Helvetica, sans-serif;
+  }
+
+#index {
+    background-image: url(/imagenes/flora\ fauna\ merryweather.png);
+    background-color: var(--colorbackground);
+    background-size: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: -1;
+}
+
+#index .flora{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    text-align: start;
+    overflow: hidden;
+    background-size:contain;
+    font-family: var(--font);
+    font-weight: bold;
+    color: var(--textcolor);
+    font-size: 5rem;
+    position: relative;
+    animation: paneo 4s ease-in-out forwards;
+
+}
+
+#index .flora1{ 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-size:contain;
+    font-family: var(--font);
+    font-weight: bold;
+    position: relative;
+    animation: paneo 4s ease-in-out forwards;
+}
+
+#index .flora2{ 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-size:contain;
+    font-family: var(--font);
+    font-weight: bold;
+    position: relative;
+    animation: paneo 4s ease-in-out forwards;
+}
+
+@keyframes paneo{ 
+    0% {
+      transform: translateX(100%);
+    }
+    50% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+}
+
+#index .flora:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/imagenes/eye.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13rem;
+    opacity: 1; 
+    z-index: -2;
+    animation: paneo 4s ease-in-out forwards;
+    
+}
+
+#index .flora1:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/imagenes/eye1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13rem;
+    opacity: 1; 
+    z-index: -2;
+    animation: paneo 4s ease-in-out forwards;
+}
+
+#index .flora2:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/imagenes/eye2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13rem;
+    opacity: 1; 
+    z-index: -2;
+    animation: paneo 4s ease-in-out forwards;
+}
+
+#index .fauna{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    text-align: start;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--font);
+    font-weight: bold;
+    color: var(--textcolor);
+    font-size: 5rem;
+    position: relative;
+ animation: paneo 6s ease-in-out forwards;
+}
+
+#index .fauna1{ 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-size:contain;
+    font-family: var(--font);
+    font-weight: bold;
+    position: relative;
+    animation: paneo 6s ease-in-out forwards;
+}
+
+#index .fauna2{ 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-size:contain;
+    font-family: var(--font);
+    font-weight: bold;
+    position: relative;
+    animation: paneo 6s ease-in-out forwards;
+}
+
+#index .fauna:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/imagenes/demon.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: 1; 
+    z-index: -1;
+    animation: paneo 6s ease-in-out forwards;
+}
+
+#index .fauna1:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/imagenes/demon1.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: 1; 
+    z-index: -1;
+    animation: paneo 6s ease-in-out forwards;
+}
+
+#index .fauna2:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/imagenes/demon2.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: 1; 
+    z-index: -1;
+    animation: paneo 6s ease-in-out forwards;
+}
+
+
+#index .merryweather{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    text-align: start;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--font);
+    font-weight: bold;
+    color: var(--textcolor);
+    font-size: 5rem;
+    position: relative;
+    animation: paneo 8s ease-in-out forwards;
+}
+
+#index .merryweather1{ 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-size:contain;
+    font-family: var(--font);
+    font-weight: bold;
+    position: relative;
+    animation: paneo 8s ease-in-out forwards;
+}
+
+#index .merryweather2{ 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-size:contain;
+    font-family: var(--font);
+    font-weight: bold;
+    position: relative;
+    animation: paneo 8s ease-in-out forwards;
+}
+
+#index .merryweather:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 5rem;
+    background-image: url(/imagenes/merryweather1.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: 1; 
+    z-index: -1;
+    animation: paneo 8s ease-in-out forwards;
+}
+
+#index .merryweather1:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 4rem;
+    background-image: url(/imagenes/merryweather2.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: 1; 
+    z-index: -1;
+    animation: paneo 8s ease-in-out forwards;
+}
+
+#index .merryweather2:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 6rem;
+    background-image: url(/imagenes/merryweather2.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    opacity: 1; 
+    z-index: -1;
+    animation: paneo 8s ease-in-out forwards;
+}
